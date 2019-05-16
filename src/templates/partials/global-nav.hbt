@@ -15,14 +15,14 @@
 
             <div class="navbar-end">
                 <div class="navbar-end--aux">
-                    <a href="/classes" class="navbar-item">Newsletters</a>
-                    <a href="/classes" class="navbar-item">Contact Us</a>
+                    <a href="/" class="navbar-item">Newsletters</a>
+                    <a href="/contact-us" class="navbar-item">Contact Us</a>
                 </div>
                 <div class="navbar-end--main">
-                    <a href="/classes" class="navbar-item">The Walsky Difference</a>
-                    <a href="/classes" class="navbar-item">Personal Services</a>
-                    <a href="/schedule/millburn" class="navbar-item">Our Company</a>
-                    <a href="/teachers" class="navbar-item">Login</a>
+                    <a href="/the-walsky-difference" class="navbar-item">The Walsky Difference</a>
+                    <a href="/personal-services" class="navbar-item">Personal Services</a>
+                    <a href="/our-company" class="navbar-item">Our Company</a>
+                    <a href="/login" class="navbar-item">Login</a>
                 </div>
             </div>
         </div>
