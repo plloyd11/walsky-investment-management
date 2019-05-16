@@ -1,0 +1,66 @@
+.global--footer {
+    background-color: #F5F5F4;
+    background: url('/img/footer-bg.svg') no-repeat center center;
+    background-size: cover;
+    &-top {
+        padding-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include mq (small) {
+            padding-top: 150px;
+            margin-bottom: 24px;
+            flex-direction: row;
+        }
+        &_text {
+            margin-bottom: 24px;
+            @include mq (small) {
+                margin-bottom: 0;
+            }
+            img {
+                max-width: 58px;
+                margin: 0 auto 12px;
+                @include mq (small) {
+                    margin: 0 0 12px 0;
+                }
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: center;
+                @include mq (small) {
+                    text-align: left;
+                }
+            }
+        }
+        &_signup {
+            input {
+                background: #FFFFFF;
+                border-radius: 8px;
+            }
+        }
+    }
+    &-bottom {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-top: 1px solid hsla(204, 4%, 26%, .2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include mq (small) {
+            flex-direction: row;
+        }
+        a {
+            margin-right: 20px;
+            font-size: 12px;
+            text-decoration: none;
+            color: rgba(47,142,113,0.90);
+        }
+        small {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+// This file contains very basic styles.
+// Set up a decent box model on the root element
+
+html {
+    background: #dfe3e8;
+}
+
+body {
+    height: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    color: #404345;
+    -webkit-text-size-adjust: none;
+    font-weight: 300;
+    line-height: 1.33333rem;
+}
+
+main {
+    background-color: #fff;
+}
+
+.homepage {
+    padding-bottom: 1em;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+// Basic styles for links
+
+a {
+    color: $primary-color;
+    font-weight: 500;
+    text-decoration: underline;
+    @include on-event {
+        color: #024631;
+    }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: normal 125% / 1.4 $text-font-stack;
+}
+
+section > * {
+    margin-left: 0.66667em;
+    margin-right: 0.66667em;
+}
+
+.section-spacing {
+    margin-bottom: 3.25em;
+}
+
+.header-spacing {
+    margin-bottom: 2.5em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.row-full {
+    margin: 0;
+}
+
+// Highlighted text is brand color
+
+::selection {
+    background: $primary-color;
+    color: #333;
+}
+
+.article-intro {
+    padding: 7em calc(50% - 600px) 0;
+    text-align: center;
+    @include mq (small) {
+        padding: 9em calc(50% - 600px) 0;
+    }
+
+    > h1 {
+        margin-bottom: 0.5em;
+        font-size: 2.15rem;
+        font-weight: 400;
+        line-height: 1;
+        @include mq (small) {
+            font-size: 3rem;
+        }
+    }
+
+    > h3 {
+        font-size: 1.45rem;
+        font-weight: 300;
+        line-height: 1;
+        @include mq (small) {
+            font-size: 1.75rem;
+        }
+    }
+
+    > img {
+        margin: 0 auto;
+    }
+}

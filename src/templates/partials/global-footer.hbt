@@ -1,0 +1,35 @@
+<footer class="global--footer">
+    <div class="global--footer-top container">
+        <div class="global--footer-top_text">
+            <img src="/img/logos/trident.png" alt="Walsky Trident">
+            <p>Walsky Investment Management, Inc.</p>
+            <p>2650 Westview Drive</p>
+            <p>Wyomissing, PA 19610</p>
+            <p>610-670-6918</p>
+        </div>
+        <div class="global--footer-top_signup">
+            <h3 class="has-text-centered has-margin-bottom-sm">Sign up for our newsletter</h3>
+            <div class="field has-addons">
+                <div class="control">
+                    <input class="input" type="text" placeholder="Enter your email">
+                </div>
+                <div class="control">
+                    <a class="button newsletter-submit">
+                        Submit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="global--footer-bottom container">
+        <div class="global--footer-bottom_links">
+            <a href="#">Privacy &amp; Security</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+        <div class="global--footer-bottom_copyright">
+            <small>Walsky Investment Management, Inc. © 2019</small>
+        </div>
+    </div>
+</footer>
