@@ -1,0 +1,14 @@
+.walsky-difference {
+    .article--hero {
+        @include hero-img(url('/img/walsky-difference/hero.jpg'));
+    }
+
+    .difference-icon {
+        margin-bottom: 12px;
+        height: 52px;
+    }
+    .slant-right {
+        background: url('/img/backgrounds/dividends-work.svg') no-repeat center center;
+        background-size: cover;
+    }
+}
