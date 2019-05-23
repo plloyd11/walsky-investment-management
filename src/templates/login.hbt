@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+
+{{> head }}
+
+<body class="{{ page }} article">
+
+  {{{ contents }}}
+
+  {{> scripts }}
+
+</body>
+
+</html>
