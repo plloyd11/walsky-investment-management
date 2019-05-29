@@ -6,8 +6,8 @@
 
     &-brand {
         img {
-            padding-left: 2.5%;
-            max-width: 200px;
+            width: 175px;
+            padding: .25em 0;
         }
     }
 
@@ -41,8 +41,8 @@
             width: 95%;
             height: 1px;
             position: absolute;
-            top: 55px;
-            left: 236px;
+            top: 37px;
+            left: 215px;
             border: .5px solid rgba(30, 55, 47, 0.50);
         }
     }

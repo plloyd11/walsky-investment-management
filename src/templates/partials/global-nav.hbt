@@ -2,7 +2,7 @@
     <div class="container">
         <hr class="nav-hr">
         <div class="navbar-brand">
-            <img src="/img/logos/logo.svg" alt="Walsky Logo">
+            <a href="/"><img src="/img/logos/logo.svg" alt="Walsky Logo"></a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
@@ -19,7 +19,6 @@
                     <a href="/contact-us" class="navbar-item">Contact Us</a>
                 </div>
                 <div class="navbar-end--main">
-                    <a href="/" class="navbar-item">home</a>
                     <a href="/the-walsky-difference" class="navbar-item">The Walsky Difference</a>
                     <a href="/personal-services" class="navbar-item">Personal Services</a>
                     <a href="/our-company" class="navbar-item">Our Company</a>
