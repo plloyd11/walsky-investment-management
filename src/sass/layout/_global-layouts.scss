@@ -126,8 +126,12 @@
     text-align: center;
     color: #fff;
     h2 {
-        margin-bottom: 24px;
-        font-size: 44px;
+        margin-bottom: 18px;
+        font-size: 36px;
+        @include mq (small) {
+            margin-bottom: 24px;
+            font-size: 44px;
+        }
     }
     p {
         font-size: 22px;

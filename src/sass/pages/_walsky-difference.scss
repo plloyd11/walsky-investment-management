@@ -3,12 +3,58 @@
         @include hero-img(url('/img/walsky-difference/hero.jpg'));
     }
 
-    .difference-icon {
-        margin-bottom: 12px;
-        height: 52px;
+    &--callout {
+        height: 450px;
+        background: url('/img/walsky-difference/callout.png') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // Text in callout
+        p {
+            margin-top: 4px;
+            text-align: center;
+            max-width: 550px;
+            font-size: 28px;
+            line-height: 1.35;
+            font-weight: 600;
+            color: #FFFFFF;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.01);
+
+            @include mq(small) {
+                font-size: 24px;
+            }
+        }
     }
-    .slant-right {
+
+    &--dividends {
+        position: relative;
+        bottom: -80px;
         background: url('/img/backgrounds/dividends-work.svg') no-repeat center center;
         background-size: cover;
+
+        >.container {
+            h2 {
+                padding-top: 96px;
+                margin-bottom: 64px;
+                font-size: 30px;
+            }
+        }
+
+        .difference-icon {
+            margin-bottom: 12px;
+            height: 52px;
+        }
+
+        small {
+            margin-top: 64px;
+            margin-bottom: 5px;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            font-weight: normal;
+        }
     }
 }

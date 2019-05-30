@@ -6,40 +6,41 @@ layout: login.hbt
 
 <main class="login">
     <div class="login--header container">
-        <a href="/"><img src="/img/logos/logo.svg" alt="Walsky Logo" width="150"></a>
+        <a href="/"><img src="/img/logos/logo.svg" alt="Walsky Logo" width="175"></a>
     </div>
     <div class="login--content">
         <div class="container">
             <div class="columns">
-                <div class="login--content_form column">
+                <div class="login--content_form column is-offset-1">
+                    <h2 class="title">Login</h2>
                     <div class="field">
+                        <label for="email">E-mail</label>
                         <p class="control has-icons-left has-icons-right">
                             <input class="input" type="email" placeholder="Email">
                             <span class="icon is-small is-left">
-                                <i class="fas fa-envelope"></i>
+                                <img src="/img/icons/login-email.svg" alt="">
                             </span>
-                            <span class="icon is-small is-right">
+                            <!-- <span class="icon is-small is-right">
                                 <i class="fas fa-check"></i>
-                            </span>
+                            </span> -->
                         </p>
                     </div>
                     <div class="field">
+                        <label for="password">Password</label>
                         <p class="control has-icons-left">
                             <input class="input" type="password" placeholder="Password">
                             <span class="icon is-small is-left">
-                                <i class="fas fa-lock"></i>
+                                <img src="/img/icons/login-password.svg" alt="">
                             </span>
                         </p>
                     </div>
-                    <div class="field">
-                        <p class="control">
-                            <button class="button is-success">
-                                Login
-                            </button>
-                        </p>
+                    <div class="login--controls">
+                        <a href="#">I forgot my password</a>
+                        <button class="button">Sign In</button>
                     </div>
                 </div>
-                <div class="login--content_text column">
+                <img class="login--content_line" src="/img/icons/login-line.svg" alt="">
+                <div class="login--content_text column is-5 is-offset-3">
                     <img src="/img/login/login.jpg" alt="">
                     <h2>Sign up today to enjoy these benefits</h2>
                     <ul class="has-margin-bottom-md">

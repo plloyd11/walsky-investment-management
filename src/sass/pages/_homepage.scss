@@ -82,7 +82,7 @@
             }
 
             p {
-                max-width: 378px;
+                max-width: 390px;
                 margin-bottom: 36px;
                 font-size: 18px;
                 font-weight: 400;
@@ -115,25 +115,25 @@
 
         // Text in callout
         p {
-            &:first-of-type {
-                margin-bottom: 18px;
-                font-size: 24px;
-                font-weight: 700;
-                color: #FFFFFF;
-                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
-                @include mq(small) {
-                    font-size: 28px;
-                }
-            }
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #FFFFFF;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
 
-            &:last-of-type {
+            @include mq(small) {
                 font-size: 28px;
-                font-weight: 700;
-                color: #005239;
-                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
-                @include mq(small) {
-                    font-size: 34px;
-                }
+            }
+        }
+
+        span {
+            font-size: 28px;
+            font-weight: 700;
+            color: #005239;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+
+            @include mq(small) {
+                font-size: 34px;
             }
         }
     }

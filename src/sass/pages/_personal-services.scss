@@ -7,8 +7,64 @@
         margin-bottom: 12px;
         height: 52px;
     }
+
     .slant-right {
         background: url('/img/backgrounds/dividends-work.svg') no-repeat center center;
         background-size: cover;
+    }
+
+    &--callout {
+        height: 450px;
+        background: url('/img/personal-services/callout.png') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // Text in callout
+        p {
+            margin-top: 4px;
+            text-align: center;
+            max-width: 550px;
+            font-size: 28px;
+            line-height: 1.35;
+            font-weight: 600;
+            color: #FFFFFF;
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.01);
+
+            @include mq(small) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &--philosophy {
+        &_text {
+            h2 {
+                margin-bottom: 12px;
+                font-size: 24px;
+            }
+            p {
+                max-width: 578px;
+            }
+        }
+    }
+
+    &--portfolio {
+        background-color: #FBF9F4;
+
+        p {
+            margin: 0 auto 48px;
+            max-width: 540px;
+            text-align: center;
+            font-size: 22px;
+            line-height: 1.55;
+        }
+
+        img {
+            margin: 0 auto;
+            max-width: 978px;
+        }
     }
 }
