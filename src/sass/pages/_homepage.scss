@@ -5,7 +5,7 @@
         background-size: cover;
 
         @include mq(small) {
-            height: 600px;
+            height: 650px;
         }
 
         @include mq(thunderbolt) {

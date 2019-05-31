@@ -4,13 +4,7 @@
     }
 
     &--callout {
-        height: 450px;
-        background: url('/img/walsky-difference/callout.png') no-repeat center center;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include article-callout(url('/img/walsky-difference/callout.png'));
 
         // Text in callout
         p {

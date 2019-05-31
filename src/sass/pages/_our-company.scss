@@ -14,13 +14,7 @@
     }
 
     &--callout {
-        height: 450px;
-        background: url('/img/our-company/callout.png') no-repeat center center;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include article-callout(url('/img/our-company/callout.png'));
 
         // Text in callout
         p {
@@ -42,6 +36,7 @@
     &--members {
         margin-top: 75px;
         margin-bottom: 75px;
+
         &_img {
             max-width: 378px;
         }
