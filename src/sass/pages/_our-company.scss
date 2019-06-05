@@ -34,8 +34,8 @@
     }
 
     &--members {
-        margin-top: 75px;
-        margin-bottom: 75px;
+        margin-top: 25px;
+        margin-bottom: 25px;
 
         &_img {
             max-width: 378px;
@@ -53,6 +53,10 @@
                 color: #5E6E78;
                 font-family: 'Fira Sans', sans-serif;
                 font-weight: normal;
+            }
+
+            p {
+                max-width: 738px;
             }
 
             div {

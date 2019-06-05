@@ -7,18 +7,40 @@
 
     &--content {
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        @include mq (small) {
+            height: 80vh;
+        }
+
+        .container {
+            flex-grow: initial;
+
+            @include mq (small) {
+                flex-grow: 1;
+            }
+        }
+
         &_form {
-            max-width: 350px;
+            max-width: 400px;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #F5F5F4;
+
+            @include mq (small) {
+                padding: 0;
+                background: none;
+            }
 
             input {
                 max-width: 400px;
             }
-            
+
             label {
                 opacity: 0.8;
                 font-family: FiraSans-Medium;
@@ -44,10 +66,17 @@
         }
 
         &_text {
+            display: none;
+
+            @include mq (small) {
+                display: block;
+            }
+
             h2 {
                 margin-top: 18px;
                 margin-bottom: 12px;
                 font-size: 24px;
+                line-height: 1.125;
             }
 
             li {

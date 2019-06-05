@@ -21,45 +21,48 @@
             margin-top: 4px;
             text-align: center;
             max-width: 550px;
-            font-size: 28px;
+            font-size: 24px;
             line-height: 1.35;
             font-weight: 600;
             color: #FFFFFF;
             text-shadow: 0 2px 2px rgba(0, 0, 0, 0.01);
-
-            @include mq(small) {
-                font-size: 24px;
-            }
         }
     }
 
     &--philosophy {
         padding: 3rem 1.5rem;
+
         @include mq (medium) {
             padding: 0;
         }
-        &_investment {
 
-            @media (min-width: 1280px) {
+        &_investment {
+            margin-top: 64px;
+            margin-bottom: 48px;
+
+            @media (min-width: 1216px) {
+                margin-bottom: 0;
                 padding: 135px 0;
                 background: url('/img/personal-services/investment-style.png') no-repeat right;
                 background-size: contain;
                 background-size: 50%;
             }
+
             @media (min-width: 1680px) {
                 background-size: 808px;
             }
         }
 
         &_mutual-fund {
-            @media (min-width: 1280px) {
-                padding: 135px 0;
+            @media (min-width: 1216px) {
+                padding: 65px 0;
                 background: url('/img/personal-services/mutual-fund.png') no-repeat left;
                 background-size: contain;
                 background-size: 50%;
             }
+
             @media (min-width: 1680px) {
-                background-size: 880px;
+                background-size: 889px;
             }
         }
 
@@ -88,7 +91,7 @@
 
         img {
             margin: 0 auto;
-            max-width: 978px;
+            width: 978px;
         }
     }
 }
