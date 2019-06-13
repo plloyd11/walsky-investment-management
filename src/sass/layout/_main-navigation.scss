@@ -74,11 +74,11 @@
 a.navbar-item.is-active,
 a.navbar-item:hover {
     background-color: transparent;
-    color: #024631;
+    color: $primary-color-dark;
 }
 
 .navbar-link:not(.is-arrowless)::after {
-    border-color: #024631;
+    border-color: $primary-color-dark;
 }
 
 .navbar-dropdown a.navbar-item:hover {
@@ -88,4 +88,8 @@ a.navbar-item:hover {
 
 .navbar-burger {
     top: 3em;
+}
+
+.active-nav-item {
+    color: $primary-color-dark !important;
 }

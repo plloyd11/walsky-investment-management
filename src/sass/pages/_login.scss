@@ -12,10 +12,6 @@
         justify-content: center;
         align-items: center;
 
-        @include mq (small) {
-            height: 80vh;
-        }
-
         .container {
             flex-grow: initial;
 
@@ -35,6 +31,10 @@
             @include mq (small) {
                 padding: 0;
                 background: none;
+            }
+
+            .login-logo {
+                margin: 0 auto 2em;
             }
 
             input {

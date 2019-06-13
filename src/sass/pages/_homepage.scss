@@ -1,14 +1,18 @@
 .homepage {
     &--hero {
         height: 400px;
-        background: url('/img/homepage-hero.jpg') no-repeat center center;
+        background: url('/img/homepage-hero.png') no-repeat center center;
         background-size: cover;
 
         @include mq(small) {
-            height: 550px;
+            height: 600px;
         }
 
-        @include mq(thunderbolt) {
+        @include mq(large) {
+            height: 650px;
+        }
+
+        @media (min-width: 1550px) {
             height: 700px;
         }
 
@@ -51,8 +55,8 @@
         padding-bottom: 85px;
 
         @include mq(small) {
-            padding-top: 150px;
-            padding-bottom: 150px;
+            padding-top: 125px;
+            padding-bottom: 125px;
         }
 
         &:nth-of-type(3) {
