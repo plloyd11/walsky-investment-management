@@ -14,8 +14,13 @@ layout: dashboard.hbt
         </div>
     </section>
     <section class="dashboard--main">
-        <nav class="container">
-            <a href="/login">Logout</a>
+        <nav class="container form-logic">
+            <div v-if="authUser">
+                <h1>Signed in as {{ authUser.email }} </h1>
+                <img :src="authUser.photoURL" width="125" alt="User Photo">
+                <p>Welcome, {{ authUser.displayName || 'friend'}}</p>
+            </div>
+            <a @click="signOut" href="/login">Logout</a>
         </nav>
         <div class="dashboard--main_header section">
             <div class="container">

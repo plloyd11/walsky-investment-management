@@ -8,34 +8,36 @@ layout: login.hbt
     <div class="login--content">
         <div class="container">
             <div class="columns">
-                <div class="login--content_form column is-offset-1">
+                <div class="login--content_form form-logic column is-offset-1">
                     <a href="/"><img src="/img/logos/logo.svg" alt="Walsky Logo" width="150" class="login-logo"></a>
                     <h2 class="title has-text-centered">Log In</h2>
-                    <div class="field">
-                        <label for="email">E-mail</label>
-                        <p class="control has-icons-left has-icons-right">
-                            <input class="input" type="email" placeholder="Email">
-                            <span class="icon is-small is-left">
-                                <img src="/img/icons/login-email.svg" alt="">
-                            </span>
-                            <!-- <span class="icon is-small is-right">
-                                <i class="fas fa-check"></i>
-                            </span> -->
-                        </p>
-                    </div>
-                    <div class="field">
-                        <label for="password">Password</label>
-                        <p class="control has-icons-left">
-                            <input class="input" type="password" placeholder="Password">
-                            <span class="icon is-small is-left">
-                                <img src="/img/icons/login-password.svg" alt="">
-                            </span>
-                        </p>
-                    </div>
-                    <div class="login--controls">
-                        <a href="#">I forgot my password</a>
-                        <a href="/dashboard"><button class="button">Sign In</button></a>
-                    </div>
+                    <form @submit.prevent="signIn">
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <p class="control has-icons-left has-icons-right">
+                                <input v-model="email" class="input" type="email" placeholder="Email">
+                                <span class="icon is-small is-left">
+                                    <img src="/img/icons/login-email.svg" alt="">
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <p class="control has-icons-left">
+                                <input v-model="password" class="input" type="password" placeholder="Password">
+                                <span class="icon is-small is-left">
+                                    <img src="/img/icons/login-password.svg" alt="">
+                                </span>
+                            </p>
+                        </div>
+                        <div class="login--controls">
+                            <a href="#">I forgot my password</a>
+                            <button class="button">Sign In</button>
+                            <div v-if="authUser">
+                                <a href="/dashboard">Go to the dashboard!</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <img class="login--content_line" src="/img/icons/login-line.svg" alt="">
                 <div class="login--content_text column is-5 is-offset-3">
@@ -46,7 +48,7 @@ layout: login.hbt
                         <li>The latest in finance news</li>
 	                    <li>Add more features</li>
                     </ul>
-                    <a href="#" class="btn-cta">Join Today</a>
+                    <a href="/create-account" class="btn-cta">Join Today</a>
                 </div>
             </div>
         </div>

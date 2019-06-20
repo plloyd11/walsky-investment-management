@@ -7,7 +7,7 @@
 
   {{{ contents }}}
 
-  {{> scripts }}
+  {{> firebase-scripts }}
 
 </body>
 

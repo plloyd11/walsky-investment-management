@@ -1,10 +1,3 @@
-var app = new Vue({
-    el: '#test',
-    data: {
-        baller: 'BALLER'
-    }
-})
-
 $(document).ready(function () {
 
     // Check for click events on the navbar burger icon

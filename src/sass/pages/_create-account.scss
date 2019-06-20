@@ -1,0 +1,68 @@
+.create-account {
+    width: 100%;
+    height: 100vh;
+
+    &--header {
+        padding: 16px 0;
+        background: $primary-color;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    &--content {
+        margin-top: 64px;
+        text-align: center;
+    }
+
+    hr {
+        width: 50%;
+        margin: 32px auto 32px;
+    }
+
+    &--form {
+        margin: 0 auto;
+        padding: 2em;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #F5F5F4;
+        border: 1px solid black;
+
+        input {
+            max-width: 400px;
+        }
+
+        label {
+            opacity: 0.8;
+            font-family: FiraSans-Medium;
+            font-size: 14px;
+            color: #404345;
+        }
+
+        a {
+            font-size: 12px;
+        }
+
+        button {
+            width: 100%;
+            background: rgb(0, 85, 59);
+            border-radius: 2px;
+            font-weight: normal;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 20.54px;
+            border: none;
+            transition: .3s ease-in;
+
+            &:hover,
+            &:focus {
+                color: #fff;
+                background: hsl(162, 65%, 18%);
+            }
+        }
+    }
+}

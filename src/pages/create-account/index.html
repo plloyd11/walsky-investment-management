@@ -1,0 +1,47 @@
+---
+title: Login | Walsky Investment Management
+description: Login page
+layout: login.hbt
+---
+
+<main class="create-account">
+    <header class="create-account--header"> 
+        <a href="/"><img src="/img/logos/trident.png" alt="Trident Logo" width="60"></a>
+    </header>
+
+    <section class="create-account--content">
+        <div class="container">
+            <h2 class="title">Let's create your account</h2>
+            <p>Signing up for a Walsky account is fast and free.</p>
+            <p>Enjoy access to our exclsuive content, and more exciting features coming soon.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="create-account--form form-logic">
+        <form @submit.prevent="register">
+            <div class="field typeField email-field">  
+                <div>
+                    <label for="email">Enter your email</label>
+                </div>
+                <div class="input-element">
+                    <input v-model="email" type="email" name="email" placeholder="you@example.com" autocomplete="off" class="input">     
+                </div>
+            </div>
+
+            <div class="field typeField password-field">  
+                <div>
+                    <label for="email">Create a password</label>
+                </div>
+                <div class="input-element">
+                    <input v-model="password" type="password" name="password" placeholder="password" autocomplete="off" class="input">     
+                </div>
+            </div>
+            <button class="button">SUBMIT</button>
+        </form>
+        <img src="/img/google-signin.png" @click="signInWithGoogle" alt="Google Sign In" class="img-responsive has-margin-top-md">
+        <p>Already have an account? <a href="/login">Sign in</a></p>
+    </section>
+
+</main>
