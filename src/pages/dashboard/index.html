@@ -17,10 +17,10 @@ layout: dashboard.hbt
         <nav class="container form-logic">
             <div v-if="authUser">
                 <h1>Signed in as {{ authUser.email }} </h1>
-                <img :src="authUser.photoURL" width="125" alt="User Photo">
-                <p>Welcome, {{ authUser.displayName || 'friend'}}</p>
+                <!-- <img :src="authUser.photoURL" width="125" alt="User Photo"> -->
+                <!-- <p>Welcome, {{ authUser.displayName || 'friend'}}</p> -->
+                <a @click="signOut" href="/login">Logout</a>
             </div>
-            <a @click="signOut" href="/login">Logout</a>
         </nav>
         <div class="dashboard--main_header section">
             <div class="container">
@@ -36,6 +36,7 @@ layout: dashboard.hbt
         </div>
         <div class="dashboard--main_content section">
             <div class="container">
+                <!-- First Row-->
                 <div class="columns">
                     <div class="column">
                         <div class="newsletter-card card">
@@ -82,8 +83,62 @@ layout: dashboard.hbt
                             <div class="card-content">
                                 <div class="content">
                                     <h3>A Cash Windfall</h3>
-                                    <h5>By Craig D. Hafer, President</h5>
+                                    <h5>By Craig D. Hafer, President | Spring 2018</h5>
                                     <p>The irony was not lost on many in the news media. As the president signed the Tax and Jobs Act of 2017…</p>
+                                    <a href="/img/newsletters/the-makings-of-a-bullet-market.pdf" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Row-->
+                <div class="columns">
+                    <div class="column">
+                        <div class="newsletter-card card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/img/newsletters/bull-market.jpg" alt="The Makings of a Bull Market">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>The Overconfidence Effect</h3>
+                                    <h5>Craig D. Hafer, President | Winter 2018</h5>
+                                    <p>The presidential election of 2016 will be remembered for many reasons. For those who watched the results...</p>
+                                    <a href="/img/newsletters/the-makings-of-a-bullet-market.pdf" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="newsletter-card card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/img/newsletters/why-did-you-do-that.jpg" alt="The Makings of a Bull Market">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>Unintended Consequences</h3>
+                                    <h5>Craig D. Hafer, President | Fall 2017</h5>
+                                    <p>In 1968, a Southern-born engineer named Don Wetzel was waiting in line at a Dallas bank when...</p>
+                                    <a href="/img/newsletters/Fall 2017_ Unintended Consequences _ Walsky Investment Management.pdf" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="newsletter-card card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/img/newsletters/cash-windfall.jpg" alt="The Makings of a Bull Market">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>The Many Faces of Unemployment</h3>
+                                    <h5>By Craig D. Hafer, President | Summer 2017</h5>
+                                    <p>June marked the 10th anniversary of the Great Recession of 2007-2009. Yet, as Barron’s magazine...</p>
                                     <a href="/img/newsletters/the-makings-of-a-bullet-market.pdf" target="_blank">Read Article</a>
                                 </div>
                             </div>

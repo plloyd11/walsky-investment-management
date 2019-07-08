@@ -24,6 +24,12 @@ new Vue({
                 .catch(error => alert(error.message))
         },
 
+        resetPassword() {
+            firebase.auth().sendPasswordResetEmail(this.email)
+                .then(() => window.location = '/login')
+                .catch(error => alert(error.message))
+        },
+
         signInWithGoogle() {
             const provider = new firebase.auth.GoogleAuthProvider()
             firebase.auth().signInWithPopup(provider)
