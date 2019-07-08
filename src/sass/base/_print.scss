@@ -1,0 +1,80 @@
+@media print {
+    /* print styles go here */
+    body {
+        font-size: 10px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        .title {
+            font-size: 14pt;
+        }
+        h2,
+        .is-size-4 {
+            font-size: 13pt !important;
+        }
+        p {
+            font-size: 9pt;
+        }
+        .article--hero {
+            height: 10cm !important;
+        }
+
+    }
+    // Homepage
+
+    .homepage {
+        &--hero {
+            height: 7cm;
+        }
+        &--content-block {
+            padding-top: 1.5cm;
+            padding-bottom: 1.5cm;
+        }
+        img {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        &--callout {
+            height: 4cm;
+            p,
+            span {
+                font-size: 8pt;
+            }
+        }
+
+        &--content-block_text {
+            p {
+                font-size: 9pt; 
+            }
+        }
+    }
+    .personal-services--portfolio p {
+        font-size: 8pt;
+    }
+
+    .our-company--members {
+        margin-top: 0;
+        margin-bottom: 0;
+        .has-margin-top-xl {
+            margin-top: .25em;
+        }
+    }
+
+    .our-company--callout {
+        height: 3cm;
+        p,
+        span {
+            font-size: 7pt;
+        }
+        img {
+            width: 24px;
+        }
+    }
+
+    .our-company--members_img {
+        img {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+}
