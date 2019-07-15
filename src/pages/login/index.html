@@ -31,10 +31,10 @@ layout: login.hbt
                             </p>
                         </div>
                         <div class="login--controls">
-                            <a href="/reset">I forgot my password</a>
                             <button class="button">Sign In</button>
-                            <div v-if="authUser">
-                                <a href="/dashboard">Go to the dashboard!</a>
+                            <div class="login--controls_helper">
+                                <a href="/reset">I forgot my password</a>
+                                <a href="/create-account" class="is-hidden-tablet">New User? Create an account today</a>
                             </div>
                         </div>
                     </form>

@@ -15,7 +15,7 @@
 
             <div class="navbar-end">
                 <div class="navbar-end--aux">
-                    <a href="/" class="navbar-item">Newsletters</a>
+                    <a href="/dashboard" class="navbar-item">Newsletters</a>
                     <a href="/contact-us" class="navbar-item">Contact Us</a>
                 </div>
                 <div class="navbar-end--main">
