@@ -2,9 +2,13 @@
     display: flex;
 
     &--sidebar {
+        display: none;
         width: 150px;
         height: 100vh;
         background: $primary-color;
+        @include mq(small) {
+            display: block;
+        }
 
         img {
             margin: 25px auto 35px;
@@ -26,15 +30,18 @@
         nav {
             padding-right: 1.5rem;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
             height: 60px;
             background-color: #FBF9F4;
+            @include mq (small) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+            }
             a {
-                margin-top: 4px;
                 display: block;
-                text-align: center;
             }
         }
 

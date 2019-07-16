@@ -10,6 +10,7 @@ $(document).ready(function () {
     });
 });
 
+// Add active state to main menu item
 $(function () {
     if ((location.pathname.split("/")[1]) !== "") {
         $('.navbar-end a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active-nav-item');

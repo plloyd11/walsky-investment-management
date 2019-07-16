@@ -6,7 +6,7 @@ layout: dashboard.hbt
 
 <main class="dashboard">
     <section class="dashboard--sidebar">
-        <div>
+        <div class="is-hidden-mobile">
             <a href="/">
                 <img src="/img/logos/trident.png" alt="Walsky Investment Trident Emblem" width="60">
             </a> 
@@ -17,17 +17,21 @@ layout: dashboard.hbt
     </section>
     <section class="dashboard--main">
         <nav class="container form-logic">
-            <div v-if="authUser">
+            <div class="is-hidden-tablet">
+                <a href="/">
+                    <img src="/img/logos/trident.png" alt="Walsky Investment Trident Emblem" width="60">
+                </a> 
+            </div>
+            <div v-if="authUser" class="is-flex">
                 <h1>Signed in as {{ authUser.email }} </h1>
-                <!-- <img :src="authUser.photoURL" width="125" alt="User Photo"> -->
-                <!-- <p>Welcome, {{ authUser.displayName || 'friend'}}</p> -->
+                <span class="has-margin-left-md has-margin-right-md is-block"> | </span>
                 <a @click="signOut" href="/login">Logout</a>
             </div>
         </nav>
         <div class="dashboard--main_header section">
             <div class="container">
                 <h1 class="title">Quarterly Newsletters</h1>
-                <div class="has-text-centered">
+                <div class="has-text-centered is-hidden">
                     <p>Sort chronologically:</p>
                     <div>
                         <a href="#" class="has-margin-right-lg">Newest to oldest</a>
