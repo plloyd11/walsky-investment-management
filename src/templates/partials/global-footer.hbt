@@ -5,20 +5,25 @@
             <p>Walsky Investment Management, Inc.</p>
             <p>2650 Westview Drive</p>
             <p>Wyomissing, PA 19610</p>
-            <p>610-670-6918</p>
+            <a href="tel:+16106706918">
+                <p>610-670-6918</p>
+            </a>
         </div>
         <div class="global--footer-top_signup">
             <h3 class="has-text-centered has-margin-bottom-sm">Sign up for our newsletter</h3>
-            <div class="field has-addons">
-                <div class="control">
-                    <input class="input" type="text" placeholder="Enter your email">
+            <form name="newsletter-subscribe" netlify netlify-honeypot="bot-field">
+                <div class="field has-addons">
+                    <p class="is-hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="control">
+                        <input class="input" type="email" name="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="control">
+                        <button class="button newsletter-submit" type="submit">Submit</button>
+                    </div>
                 </div>
-                <div class="control">
-                    <a class="button newsletter-submit">
-                        Submit
-                    </a>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
     <hr>
