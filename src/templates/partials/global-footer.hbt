@@ -29,9 +29,9 @@
     <hr>
     <div class="global--footer-bottom container">
         <div class="global--footer-bottom_links">
-            <a href="#">Privacy &amp; Security</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Cookie Policy</a>
+            <a href="/privacy-security">Privacy &amp; Security</a>
+            <a href="/terms-of-use">Terms of Use</a>
+            <a href="/cookie-policy">Cookie Policy</a>
         </div>
         <div class="global--footer-bottom_copyright">
             <small>Walsky Investment Management, Inc. © 2019</small>

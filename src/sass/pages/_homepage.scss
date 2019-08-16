@@ -55,7 +55,11 @@
         padding-bottom: 85px;
 
         @include mq(small) {
-            padding-top: 125px;
+            padding-top: 155px;
+            padding-bottom: 155px;
+        }
+        @include mq(desktop) {
+            padding-top: 235px;
             padding-bottom: 125px;
         }
 
@@ -115,7 +119,7 @@
             font-size: 28px;
             font-weight: 700;
             line-height: 1.1;
-            color: #FFFFFF;
+            color: #ffffff;
             text-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
 
             @include mq(small) {

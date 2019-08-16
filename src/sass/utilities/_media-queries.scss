@@ -1,22 +1,33 @@
 $breakpoints: (
-  'small'  : ( min-width:  769px ),
-  'medium' : ( min-width:  1024px ),
-  'large'  : ( min-width: 1408px ),
-  'thunderbolt'  : ( min-width: 1800px )
+    'small': (
+        min-width: 769px
+    ),
+    'medium': (
+        min-width: 1024px
+    ),
+    'large': (
+        min-width: 1408px
+    ),
+    'desktop': (
+        min-width: 1680px
+    ),
+    'thunderbolt': (
+        min-width: 1800px
+    )
 );
 
 @mixin mq($name) {
-  // If the key exists in the map
-  @if map-has-key($breakpoints, $name) {
-    // Prints a media query based on the value
-    @media #{inspect(map-get($breakpoints, $name))} {
-      @content;
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $name) {
+        // Prints a media query based on the value
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
     }
-  }
 
-  // If the key doesn't exist in the map
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    // If the key doesn't exist in the map
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Please make sure it is defined in `$breakpoints` map.";
-  }
+    }
 }

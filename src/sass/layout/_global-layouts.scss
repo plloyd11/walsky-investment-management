@@ -1,7 +1,6 @@
 .has-background-light {
-    background-color: #FBF9F4 !important;
+    background-color: #fbf9f4 !important;
 }
-
 
 // HR Spacers
 .hr-content_horizontal {
@@ -25,7 +24,7 @@
 .content-page {
     margin: -90px auto 0;
     background: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
     &_hero {
         h1 {
             color: #fff;
@@ -74,24 +73,23 @@
     }
 }
 
-
 .text-block-container {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	-ms-flex-flow: row wrap;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	flex-flow: row wrap;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .paragraph-block {
@@ -99,12 +97,12 @@
 }
 
 .text-block {
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 1 50%;
-	-ms-flex: 0 1 50%;
-	flex: 0 1 50%;
-	min-height: 450px;
-	min-width: 300px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    min-height: 450px;
+    min-width: 300px;
 }
 
 .text-block-inside-container {
@@ -129,7 +127,7 @@
         margin-bottom: 18px;
         font-size: 36px;
         line-height: 1.25;
-        @include mq (small) {
+        @include mq(small) {
             font-size: 44px;
         }
     }
@@ -149,6 +147,14 @@
             line-height: 1.5;
             font-size: 1.5rem;
         }
+    }
+}
+
+.container-slim {
+    max-width: 960px;
+    p {
+        padding: 0 0.75em;
+        margin-bottom: 1em;
     }
 }
 
