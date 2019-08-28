@@ -10,6 +10,8 @@
             </a>
         </div>
         <div class="global--footer-top_signup">
+            <img src="/img/icons/5percent-logo.svg" alt="5% of pre-tax profits go to the environment"
+                class="five-percent-logo">
             <h3 class="has-text-centered has-margin-bottom-sm">Sign up for our newsletter</h3>
             <form name="newsletter-subscribe" netlify netlify-honeypot="bot-field">
                 <div class="field has-addons">

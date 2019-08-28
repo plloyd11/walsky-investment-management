@@ -1,5 +1,5 @@
 .global--footer {
-    background-color: #F5F5F4;
+    background-color: #f5f5f4;
     background: url('/img/footer-bg.svg') no-repeat center center;
     background-size: cover;
     &-top {
@@ -8,20 +8,20 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        @include mq (small) {
+        @include mq(small) {
             padding-top: 150px;
             margin-bottom: 24px;
             flex-direction: row;
         }
         &_text {
             margin-bottom: 24px;
-            @include mq (small) {
+            @include mq(small) {
                 margin-bottom: 0;
             }
             img {
                 max-width: 58px;
                 margin: 0 auto 12px;
-                @include mq (small) {
+                @include mq(small) {
                     margin: 0 0 12px 0;
                 }
             }
@@ -30,14 +30,14 @@
                 font-weight: 400;
                 line-height: 1.5;
                 text-align: center;
-                @include mq (small) {
+                @include mq(small) {
                     text-align: left;
                 }
             }
         }
         &_signup {
             input {
-                background: #FFFFFF;
+                background: #ffffff;
                 border-radius: 8px;
             }
         }
@@ -45,22 +45,27 @@
     &-bottom {
         padding-top: 14px;
         padding-bottom: 14px;
-        border-top: 1px solid hsla(204, 4%, 26%, .2);
+        border-top: 1px solid hsla(204, 4%, 26%, 0.2);
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        @include mq (small) {
+        @include mq(small) {
             flex-direction: row;
         }
         a {
             margin-right: 20px;
             font-size: 12px;
             text-decoration: none;
-            color: rgba(47,142,113,0.90);
+            color: rgba(47, 142, 113, 0.9);
         }
         small {
             font-size: 12px;
         }
     }
+}
+
+.five-percent-logo {
+    max-width: 155px;
+    margin: 0 auto 0.75em;
 }
