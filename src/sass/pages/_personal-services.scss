@@ -24,15 +24,16 @@
             font-size: 24px;
             line-height: 1.35;
             font-weight: 600;
-            color: #FFFFFF;
+            color: #ffffff;
             text-shadow: 0 2px 2px rgba(0, 0, 0, 0.01);
         }
     }
 
     &--philosophy {
+        background-color: #fbf9f4;
         padding: 3rem 1.5rem;
 
-        @include mq (medium) {
+        @include mq(medium) {
             padding: 0;
         }
 
@@ -79,7 +80,7 @@
     }
 
     &--portfolio {
-        background-color: #FBF9F4;
+        background-color: #fbf9f4;
 
         p {
             margin: 0 auto 48px;
