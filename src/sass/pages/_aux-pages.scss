@@ -1,0 +1,11 @@
+.environment {
+    .article--hero {
+        @include hero-img(url('/img/aux-pages/environment-hero.jpg'));
+    }
+}
+
+.request-information {
+    .article--hero {
+        @include hero-img(url('/img/aux-pages/request-information-hero.jpg'));
+    }
+}
