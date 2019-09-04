@@ -55,11 +55,11 @@
         padding-bottom: 85px;
 
         @include mq(small) {
-            padding-top: 155px;
+            padding-top: 135px;
             padding-bottom: 155px;
         }
         @include mq(desktop) {
-            padding-top: 235px;
+            padding-top: 185px;
             padding-bottom: 125px;
         }
 

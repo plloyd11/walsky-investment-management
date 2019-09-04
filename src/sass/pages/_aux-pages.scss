@@ -9,3 +9,28 @@
         @include hero-img(url('/img/aux-pages/request-information-hero.jpg'));
     }
 }
+
+.thank-you {
+    .article--hero {
+        @include hero-img(url('/img/aux-pages/thank-you-hero.jpg'));
+    }
+}
+
+.aux-page {
+    li {
+        font-size: 18px;
+        line-height: 1.35;
+        margin-bottom: 0.45em;
+        text-align: left;
+        font-weight: normal;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+.aux-header {
+    font-size: 28px;
+    margin-bottom: 0.65em;
+    text-align: left;
+}
