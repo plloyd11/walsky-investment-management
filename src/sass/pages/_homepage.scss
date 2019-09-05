@@ -1,7 +1,7 @@
 .homepage {
     &--hero {
         height: 400px;
-        background: url('/img/homepage-hero.png') no-repeat center center;
+        background: url('/img/homepage/hero.jpg') no-repeat center center;
         background-size: cover;
 
         @include mq(small) {
@@ -100,7 +100,7 @@
     }
 
     &--newsletter-callout {
-        @include article-callout(url('/img/homepage/newsletter-callout.png'));
+        @include article-callout(url('/img/homepage/newsletter-callout.jpg'));
 
         // Text in callout
         p {
