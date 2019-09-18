@@ -7,8 +7,8 @@
 
     &-brand {
         img {
-            width: 175px;
-            padding: 0.25em 0;
+            width: 200px;
+            padding: 0.35em 0;
         }
     }
 
@@ -54,12 +54,12 @@
             width: 80%;
             height: 1px;
             position: absolute;
-            top: 37px;
+            top: 44px;
             right: 0;
             border: 0.5px solid rgba(30, 55, 47, 0.5);
         }
         @media (min-width: 1216px) {
-            width: 85%;
+            width: 82%;
         }
     }
 }
