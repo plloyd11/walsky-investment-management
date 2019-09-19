@@ -22,7 +22,10 @@ main {
 }
 
 .main-dont-hide-under-nav {
-    padding-top: 146px;
+    padding-top: 78px;
+    @media (min-width: 1024px) {
+        padding-top: 125px;
+    }
 }
 
 .has-margin-auto {
