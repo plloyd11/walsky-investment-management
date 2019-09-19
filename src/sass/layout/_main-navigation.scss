@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
 
@@ -11,10 +11,10 @@
 
     &-brand {
         img {
-            width: 200px;
+            width: 175px;
             padding: 0.35em 0 0.35em 0.45em;
             @media (min-width: 1024px) {
-                width: 265px;
+                width: 225px;
                 padding: 0.25em 0;
             }
         }
@@ -62,12 +62,12 @@
             width: 65%;
             height: 1px;
             position: absolute;
-            top: 38px;
+            top: 48px;
             right: 0;
             border: 0.5px solid rgba(30, 55, 47, 0.5);
         }
         @media (min-width: 1216px) {
-            width: 72%;
+            width: 75%;
         }
     }
 }
@@ -96,7 +96,7 @@ a.navbar-item:hover {
 }
 
 .navbar-burger {
-    top: 8px;
+    top: 30px;
 }
 
 .active-nav-item {
