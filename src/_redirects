@@ -5,3 +5,6 @@
 /the-importance-of-dividends/ /the-walsky-difference/
 /our-philosophy/ /personal-services/
 /about-us/ /our-company/
+
+# Redirect default Netlify subdomain to primary domain
+https://walsky.netlify.com/* https://walsky.com/:splat 301!
