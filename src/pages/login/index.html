@@ -9,24 +9,24 @@ layout: login.hbt
         <div class="container">
             <div class="columns">
                 <div class="login--content_form form-logic column is-offset-1">
-                    <a href="/"><img src="/img/logos/logo.svg" alt="Walsky Logo" width="150" class="login-logo"></a>
+                    <a href="/"><img src="/img/logos/logo.svg" alt="Walsky Logo" width="150" class="login-logo"/></a>
                     <h2 class="title has-text-centered">Log In</h2>
                     <form @submit.prevent="signIn">
                         <div class="field">
                             <label for="email">E-mail</label>
                             <p class="control has-icons-left has-icons-right">
-                                <input v-model="email" class="input" type="email" placeholder="Email">
+                                <input v-model="email" class="input" type="email" placeholder="Email" />
                                 <span class="icon is-small is-left">
-                                    <img src="/img/icons/login-email.svg" alt="">
+                                    <img src="/img/icons/login-email.svg" alt="" />
                                 </span>
                             </p>
                         </div>
                         <div class="field">
                             <label for="password">Password</label>
                             <p class="control has-icons-left">
-                                <input v-model="password" class="input" type="password" placeholder="Password">
+                                <input v-model="password" class="input" type="password" placeholder="Password" />
                                 <span class="icon is-small is-left">
-                                    <img src="/img/icons/login-password.svg" alt="">
+                                    <img src="/img/icons/login-password.svg" alt="" />
                                 </span>
                             </p>
                         </div>
@@ -39,12 +39,12 @@ layout: login.hbt
                         </div>
                     </form>
                 </div>
-                <img class="login--content_line" src="/img/icons/login-line.svg" alt="">
+                <img class="login--content_line" src="/img/icons/login-line.svg" alt="" />
                 <div class="login--content_text column is-5 is-offset-3">
-                    <img src="/img/login/login.jpg" alt="">
+                    <img src="/img/login/login.jpg" alt="" />
                     <h2>Sign up today to enjoy these benefits</h2>
                     <ul class="has-margin-bottom-md">
-                        <li>Access to exclusive members only content</li>
+                        <li>Access to exclusive members-only content</li>
                         <li>The latest Walsky newsletters</li>
                         <li>Access to new features as they are added</li>
                     </ul>
