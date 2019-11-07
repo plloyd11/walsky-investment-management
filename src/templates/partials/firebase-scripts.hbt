@@ -16,13 +16,13 @@
 </script>
 
 <script>
-    firebase.auth().onAuthStateChanged( (user) => {
-        if (user) {
-          // User is signed in.
-        } else {
-            window.location.href = '/login'; 
-        }
-    });
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      // User is signed in.
+    } else {
+      window.location.href = '/login';
+    }
+  });
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>

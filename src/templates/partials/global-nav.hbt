@@ -15,7 +15,14 @@
 
             <div class="navbar-end">
                 <div class="navbar-end--aux">
-                    <a href="/dashboard" class="navbar-item">Newsletters</a>
+                    <div class="form-logic">
+                        <div v-if="authUser">
+                            <a href="/dashboard" class="navbar-item">Newsletters</a>
+                        </div>
+                        <div v-else>
+                            <a href="/login" class="navbar-item">Newsletters</a>
+                        </div>
+                    </div>
                     <a href="/contact-us" class="navbar-item">Contact Us</a>
                 </div>
                 <div class="navbar-end--main">
