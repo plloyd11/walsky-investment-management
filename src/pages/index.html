@@ -63,10 +63,17 @@ layout: home.hbt
 
     <section class="homepage--newsletter-callout">
         <p>
-            Check out our fall 2019 quarterly newsletter, <span class="is-italic">Dr. Shillers Remarkable Chart</span>,
+            Check out our fall 2019 quarterly newsletter, <span class="is-italic">Dr. Shiller's Remarkable Chart</span>,
             where Walsky President Craig Hafer discusses Dr. Robert Shiller, one of the greatest economists of all time.
         </p>
-        <a href="/dashboard" class="btn btn-cta has-margin-top-lg">Click Here</a>
+        <div id="newsletter-redirect">
+            <div v-if="authUser">
+                <a href="/dashboard" class="btn btn-cta has-margin-top-lg">Click Here</a>
+            </div>
+            <div v-else>
+                <a href="/login" class="btn btn-cta has-margin-top-lg">Click Here</a>
+            </div>
+        </div>
     </section>
 
     <section class="homepage--content-block section">

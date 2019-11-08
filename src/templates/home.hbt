@@ -13,6 +13,8 @@
 
   {{> scripts }}
 
+  <script src="/js/newsletter-redirect.js"></script>
+
 </body>
 
 </html>
