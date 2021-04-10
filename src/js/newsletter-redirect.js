@@ -6,7 +6,7 @@ new Vue({
         password: '',
         authUser: null
     },
-    
+
     created() {
         firebase.auth().onAuthStateChanged(user => {
             this.authUser = user;

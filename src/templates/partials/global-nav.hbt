@@ -17,10 +17,10 @@
                 <div class="navbar-end--aux">
                     <div class="form-logic">
                         <div v-if="authUser">
-                            <a href="/dashboard" class="navbar-item">Newsletters</a>
+                            <a href="/dashboard" class="navbar-item">Quarterly Reports</a>
                         </div>
                         <div v-else>
-                            <a href="/login" class="navbar-item">Newsletters</a>
+                            <a href="/login" class="navbar-item">Quarterly Reports</a>
                         </div>
                     </div>
                     <a href="/contact-us" class="navbar-item">Contact Us</a>

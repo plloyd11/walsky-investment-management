@@ -53,3 +53,22 @@ new Vue({
         });
     }
 });
+
+new Vue({
+    el: '.share-form-logic',
+    data: {
+        your_name: '',
+        yourEmail: 'test@aol.com',
+        friend_email: '',
+        newsletterName: 'A Return To Normal',
+        newsletterUrl: 'https://walsky.com/img/newsletters/spring-2021-newsletter.pdf',
+        addToList: false,
+    },
+    methods: {
+        addToMailingList() {
+            if (this.addToList) {
+                console.log(this.yourEmail);
+            }
+        }
+    }
+});

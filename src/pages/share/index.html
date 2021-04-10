@@ -1,0 +1,67 @@
+---
+title: Share Quarterly Reports | Walsky Investment Management
+description: Share our Quarterly Reports with a friend!
+layout: article.hbt
+---
+
+<main class="share-page article main-dont-hide-under-nav">
+    <!-- Hero -->
+    <section class="article--hero section">
+        <div class="article--hero_content container">
+            <h2>Share Our Quarterly Reports</h2>
+        </div>
+    </section>
+
+    <section class="article--content-block section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <h1 class="title">Enjoying our Quarterly Reports?</h1>
+                    <p>
+                        Enter your email and the email of a friend to send them a link to our most recent quarterly newsletter.
+                    </p>
+                </div>
+                <div class="column is-half create-account--form share-form-logic">
+                    <form
+                        :action="`mailto:${friend_email}`"
+                        method="GET"
+                        enctype="text/plain"
+                        name="shareForm"
+                    >
+                        <div class="field typeField email-field">
+                            <div class="hidden">
+                                <input type="text" name="subject" :value="`Your friend ${your_name} wants to send you an article from Walsky Investment Management!`">
+                                <input type="text" name="body" :value="`Check out the latest quarterly report, ${newsletterName}, at the following link: ${newsletterUrl}`">
+                            </div>
+                            <div>
+                                <label for="your_name">Enter your name</label>
+                            </div>
+                            <div class="input-element">
+                                <input v-model="your_name" type="text" name="your_name" placeholder="Your name" class="input" required>
+                            </div>
+                        </div>
+
+                        <div class="field typeField password-field mt-5">
+                            <div>
+                                <label for="friend_email">Your Friend's Email</label>
+                            </div>
+                            <div class="input-element">
+                                <input v-model="friend_email" type="email" name="friend_email" placeholder="friend@example.com" class="input" required>
+                            </div>
+                        </div>
+
+                        <!-- <div class="field typeField password-field mt-5">
+                            <input v-model="addToList" id="add_to_list" name="add_to_list" type="checkbox">
+                            <label for="add_to_list">
+                              Subscribe to our newsletter
+                            </label>
+                        </div> -->
+
+                        <button @submit="addToMailingList" type="submit" class="button mt-2">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
