@@ -8,6 +8,10 @@
             <a href="tel:+16106706918">
                 <p>610-670-6918</p>
             </a>
+            <div class="has-margin-top-md">
+                <h4>PDF Downloads</h4>
+                <a href="/img/2022-form-crs-walsky-investment-management-3-30-22.pdf" target="_blank" class="is-block has-margin-top-sm">Form CRS (Client Relationship Summary)</a>
+            </div>
         </div>
         <div class="global--footer-top_signup">
             <a href="/the-environment">
